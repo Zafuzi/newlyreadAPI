@@ -12,6 +12,16 @@
                     "type": "platform",
                     "version": "1.1.0"
                 },
+                "Microsoft.AspNetCore.Diagnostics": "1.1.0",
+                "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.1.0",
+                "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.1.0",
+                "Microsoft.AspNetCore.Mvc": "1.1.0",
+                "Microsoft.AspNetCore.Razor.Tools": {
+                    "version": "1.1.0-preview4-final",
+                    "type": "build"
+                },
+                "Microsoft.AspNetCore.Routing": "1.1.0",
+                "Microsoft.AspNetCore.Server.IISIntegration": "1.1.0",
                 "Microsoft.AspNetCore.Server.Kestrel": "1.1.0",
                 "Microsoft.AspNetCore.StaticFiles": "1.1.0",
                 "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.1.0",
@@ -22,7 +32,10 @@
                 "Microsoft.Extensions.Logging.Console": "1.1.0",
                 "Microsoft.Extensions.Logging.Debug": "1.1.0",
                 "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.0",
-                "StackExchange.Redis": "1.2.0"
+                "RestSharp.NetCore": "105.2.3",
+                "StackExchange.Redis": "1.2.0",
+                "AngleSharp": "0.9.9",
+                "DevZH.HtmlAgilityPack": "1.4.9",
             },
             "imports": "dnxcore50"
         }
