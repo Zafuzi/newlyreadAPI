@@ -75,9 +75,13 @@ namespace NewlyReadAPI.Controllers
             setExtractedAsync();
 
         }
-        public static string getExtracted(string category)
+        public static dynamic getExtracted(string category)
         {
-            return "";
+            ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("127.0.0.1");
+            IDatabase db = redis.GetDatabase();
+            IServer server = redis.GetServer("127.0.0.1", 6379);
+
+            return db.SetMembers("extracted:" + category).ToList();
         }
         public static async void setExtractedAsync()
         {
