@@ -15,7 +15,7 @@ namespace NewlyReadAPI
         {
             var sourcesTimer = new System.Threading.Timer((e) =>
             {
-                NewlyReadAPI.Controllers.ArticleController.setSources();
+                NewlyReadAPI.Controllers.v1Controller.setSources();
             }, null, TimeSpan.Zero, TimeSpan.FromMinutes(20));
 
             var host = new WebHostBuilder()

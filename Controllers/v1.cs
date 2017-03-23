@@ -13,7 +13,7 @@ using AngleSharp.Parser.Html;
 namespace NewlyReadAPI.Controllers
 {
     [Route("api/[controller]")]
-    public class ArticleController : Controller
+    public class v1Controller : Controller
     {
         private static List<string> categories = new List<string>(){
             "business", "entertainment", "gaming", "general", "music", "science-and-nature", "sport", "technology"
@@ -33,6 +33,8 @@ namespace NewlyReadAPI.Controllers
             dynamic data = "";
             switch (endpoint)
             {
+                case "hello":
+                    return "world";
                 case "extracted":
                     return getExtracted(category);
                 default:
